@@ -34,6 +34,8 @@ nav a {
   padding: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
   text-align: center;
+  position: relative;
+  cursor: pointer;
 }
 
 .gallery-card img {
@@ -54,6 +56,31 @@ nav a {
 .gallery-caption {
   margin-top: 8px;
   font-size: 0.95rem;
+}
+
+.caption {
+  display: block;
+  margin-top: 6px;
+  font-weight: bold;
+  color: #2f6f4e;
+}
+
+.description {
+  position: absolute;
+  left: 12px;
+  bottom: 12px;
+  background: rgba(47, 111, 78, 0.9);
+  color: #ffffff;
+  padding: 8px 10px;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease;
+}
+
+.gallery-card:hover .description {
+  opacity: 1;
 }
 
 h1,

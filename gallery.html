@@ -33,6 +33,19 @@
         "Sweet companion dog"
       ];
 
+      const descTexts = [
+        "A happy dog playing outdoors with bright sunshine.",
+        "A calm cat enjoying a quiet afternoon by the window.",
+        "A cheerful puppy running freely in the park.",
+        "A friendly dog greeting visitors during a walk.",
+        "A sleepy cat resting comfortably on a warm blanket.",
+        "A curious puppy exploring the grass with excitement.",
+        "A playful cat looking up with bright eyes.",
+        "A lovable mixed-breed dog wagging happily.",
+        "A tiny kitten chasing toys with endless energy.",
+        "A sweet dog wearing a red collar and friendly smile."
+      ];
+
       const alts = [
         "Golden retriever enjoying the sunshine",
         "Gray cat resting on a window seat",
@@ -45,6 +58,11 @@
         "Kitten playing with a toy",
         "Small dog wearing a red collar"
       ];
+
+      const openCaptionTag = '<div class="caption">';
+      const closeCaptionTag = '</div>';
+      const openDescTag = '<div class="description">';
+      const closeDescTag = '</div>';
 
       const galleryList = document.getElementById("gallery-list");
 
@@ -64,8 +82,13 @@
         caption.textContent = captions[i];
         caption.className = "gallery-caption";
 
+        const description = document.createElement("div");
+        description.className = "description";
+        description.textContent = descTexts[i];
+
         listItem.appendChild(image);
         listItem.appendChild(caption);
+        listItem.appendChild(description);
         galleryList.appendChild(listItem);
       }
     </script>
