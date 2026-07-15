@@ -45,9 +45,10 @@ nav a {
   border-radius: 10px;
 }
 
-.gallery-card figcaption {
+.gallery-card p {
   color: #365a4a;
   font-weight: bold;
+  margin: 0;
 }
 
 h1,
