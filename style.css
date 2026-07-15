@@ -51,6 +51,11 @@ nav a {
   margin: 0;
 }
 
+.gallery-caption {
+  margin-top: 8px;
+  font-size: 0.95rem;
+}
+
 h1,
 h2 {
   color: #2f6f4e;
